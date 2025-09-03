@@ -1,17 +1,34 @@
+# TaskMaster Pro - Angular Project .gitignore
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
-# Compiled output
+# ===========================
+# Angular Compiled Output
+# ===========================
 /dist
 /tmp
 /out-tsc
 /bazel-out
+/.angular/cache
+.angular/
 
-# Node
+# ===========================
+# Node.js Dependencies
+# ===========================
 /node_modules
-npm-debug.log
-yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
-# IDEs and editors
+# Package manager lock files (uncomment the ones you don't use)
+package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ===========================
+# IDEs and Editors
+# ===========================
 .idea/
 .project
 .classpath
@@ -28,8 +45,9 @@ yarn-error.log
 !.vscode/extensions.json
 .history/*
 
-# Miscellaneous
-/.angular/cache
+# ===========================
+# Development and Build
+# ===========================
 .sass-cache/
 /connect.lock
 /coverage
@@ -37,6 +55,174 @@ yarn-error.log
 testem.log
 /typings
 
-# System files
+# Testing
+/coverage/
+/reports/
+test-results.xml
+junit.xml
+e2e/reports/
+
+# Build artifacts
+build/
+*.map
+*.min.js
+*.min.css
+bundle-report.html
+stats.json
+
+# ===========================
+# Environment and Config
+# ===========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.development
+.env.test
+.env.production
+
+# Local configuration
+config/local.json
+.local.json
+.npmrc
+.yarnrc
+
+# ===========================
+# System Files
+# ===========================
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
 Thumbs.db
+ehthumbs.db
+Thumbs.db:encryptable
+
+# ===========================
+# Application Specific
+# ===========================
+# Local storage files
+local-storage-fallback.json
+analytics-data.json
+settings-backup.json
+
+# User data and preferences
+user-preferences.json
+app-settings.json
+
+# Translation cache
+.translation-cache/
+
+# Theme customizations
+custom-themes.json
+
+# ===========================
+# Logs and Temporary Files
+# ===========================
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary folders and files
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Backup files
+*.backup
+*.bak
+
+# ===========================
+# PWA and Service Workers
+# ===========================
+sw.js
+ngsw.json
+ngsw-worker.js
+workbox-*.js
+
+# ===========================
+# TypeScript
+# ===========================
+*.tsbuildinfo
+
+# Generated JS files (except specs)
+src/**/*.js
+src/**/*.js.map
+!src/**/*.spec.js
+!src/**/*.e2e-spec.js
+
+# ===========================
+# Optional Dependencies
+# ===========================
+.npm
+.eslintcache
+.stylelintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+
+# ===========================
+# Database and Storage
+# ===========================
+*.sqlite
+*.sqlite3
+*.db
+
+# ===========================
+# Security and Certificates
+# ===========================
+*.pem
+*.key
+*.crt
+
+# ===========================
+# Documentation
+# ===========================
+docs/generated/
+
+# ===========================
+# Deployment and Cloud
+# ===========================
+.firebase
+*-debug.log
+.runtimeconfig.json
+.serverless/
+
+# Docker
+.dockerignore
+Dockerfile.dev
+
+# Kubernetes
+*.yaml.local
+*.yml.local
+
+# ===========================
+# Performance and Analysis
+# ===========================
+profile.json
+speed-measure-plugin.json
+
+# ===========================
+# Cache Directories
+# ===========================
+.cache
+.parcel-cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
