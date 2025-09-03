@@ -9,7 +9,7 @@
 
 **Una aplicación moderna de gestión de tareas construida con Angular 18+ y Material Design**
 
-[🚀 Demo en Vivo](#) | [📖 Documentación](#características) | [🐛 Reportar Bug](mailto:oscarhinjoslopez@gmail.com)
+[📖 Documentación](#características) | [🐛 Reportar Bug](mailto:oscarhinjoslopez@gmail.com)
 
 </div>
 
