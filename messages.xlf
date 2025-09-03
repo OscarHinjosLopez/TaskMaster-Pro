@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="add-new-task" datatype="html">
+        <source>Agregar Nueva Tarea</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/agregar-tareas/agregar-tareas.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="organize-day-subtitle" datatype="html">
+        <source>Organiza tu día agregando nuevas tareas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/agregar-tareas/agregar-tareas.component.html</context>
+          <context context-type="linenumber">5,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="what-need-to-do" datatype="html">
+        <source>¿Qué necesitas hacer?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/agregar-tareas/agregar-tareas.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="task-placeholder" datatype="html">
+        <source>Ej: Completar el proyecto de Angular</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/agregar-tareas/agregar-tareas.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add-task-button" datatype="html">
+        <source>Agregar Tarea</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/agregar-tareas/agregar-tareas.component.html</context>
+          <context context-type="linenumber">43,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="clear-button" datatype="html">
+        <source>Limpiar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/agregar-tareas/agregar-tareas.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="adding-task" datatype="html">
+        <source>Agregando tarea...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/agregar-tareas/agregar-tareas.component.html</context>
+          <context context-type="linenumber">64,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="task-already-exists" datatype="html">
+        <source>⚠️ La tarea ya existe</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/agregar-tareas/agregar-tareas.component.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="task-added-successfully" datatype="html">
+        <source>✅ Tarea agregada correctamente</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/agregar-tareas/agregar-tareas.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-adding-task" datatype="html">
+        <source>❌ Error al agregar la tarea</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/agregar-tareas/agregar-tareas.component.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="close-button" datatype="html">
+        <source>Cerrar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/agregar-tareas/agregar-tareas.component.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="task-required" datatype="html">
+        <source>La tarea es requerida</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/agregar-tareas/agregar-tareas.component.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="task-min-length" datatype="html">
+        <source>La tarea debe tener al menos 3 caracteres</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/agregar-tareas/agregar-tareas.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="change-language" datatype="html">
+        <source>Cambiar idioma</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/language-selector/language-selector.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="my-tasks" datatype="html">
+        <source>Mis Tareas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tareas/lista-tareas.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tasks-pending-count" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ getTaskCountText(tareas.length) }}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tareas/lista-tareas.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loading-tasks" datatype="html">
+        <source>Cargando tareas...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tareas/lista-tareas.component.html</context>
+          <context context-type="linenumber">16,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="no-tasks" datatype="html">
+        <source>¡No hay tareas!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tareas/lista-tareas.component.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add-first-task" datatype="html">
+        <source>Agrega tu primera tarea para comenzar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tareas/lista-tareas.component.html</context>
+          <context context-type="linenumber">25,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="no-title" datatype="html">
+        <source>Sin título</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tareas/lista-tareas.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="delete-task-aria" datatype="html">
+        <source>Eliminar tarea: <x id="PH" equiv-text="this.getTaskText(tarea)"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tareas/lista-tareas.component.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="one-task-pending" datatype="html">
+        <source>1 tarea pendiente</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tareas/lista-tareas.component.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="multiple-tasks-pending" datatype="html">
+        <source><x id="PH" equiv-text="count"/> tareas pendientes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tareas/lista-tareas.component.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="app-title" datatype="html">
+        <source>TaskMaster Pro</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="app-subtitle" datatype="html">
+        <source>Organiza tu vida, maximiza tu productividad</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="total-tasks" datatype="html">
+        <source>Tareas Totales</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="completed-tasks" datatype="html">
+        <source>Completadas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pending-tasks" datatype="html">
+        <source>Pendientes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="indexeddb-not-available" datatype="html">
+        <source>IndexedDB not available, using localStorage as fallback</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/storage.service.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tasks-loaded" datatype="html">
+        <source>Tasks loaded:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/tarea.service.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-loading-tasks" datatype="html">
+        <source>Error loading tasks:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/tarea.service.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="auto-save-failed" datatype="html">
+        <source>Auto-save failed:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/tarea.service.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="task-created-successfully" datatype="html">
+        <source>Task &quot;<x id="PH" equiv-text="titulo"/>&quot; created successfully</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/tarea.service.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-creating-task" datatype="html">
+        <source>Error creating task:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/tarea.service.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="task-not-found" datatype="html">
+        <source>Task not found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/tarea.service.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/tarea.service.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="task-uncompleted" datatype="html">
+        <source>Task &quot;<x id="PH" equiv-text="task.titulo"/>&quot; uncompleted</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/tarea.service.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="task-completed" datatype="html">
+        <source>Task &quot;<x id="PH" equiv-text="task.titulo"/>&quot; completed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/tarea.service.ts</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-completing-task" datatype="html">
+        <source>Error completing task:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/tarea.service.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="task-deleted" datatype="html">
+        <source>Task &quot;<x id="PH" equiv-text="task.titulo"/>&quot; deleted</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/tarea.service.ts</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-deleting-task" datatype="html">
+        <source>Error deleting task:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/tarea.service.ts</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="task-updated" datatype="html">
+        <source>Task updated</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/tarea.service.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-updating-task" datatype="html">
+        <source>Error updating task:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/tarea.service.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

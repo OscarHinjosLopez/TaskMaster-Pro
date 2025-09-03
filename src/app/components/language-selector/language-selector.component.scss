@@ -1,0 +1,191 @@
+.language-selector {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  .language-button {
+    width: 64px;
+    height: 64px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    &:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+    &:active {
+      transform: scale(0.98);
+    }
+    .button-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+    .flag-icon {
+      font-size: 22px;
+      line-height: 1;
+      user-select: none;
+    }
+    .language-code {
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      opacity: 0.9;
+      line-height: 1;
+    }
+  }
+}
+::ng-deep .elegant-language-menu {
+  .mat-mdc-menu-panel {
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    min-width: 220px;
+    max-width: 280px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
+  }
+  .menu-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 20px 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    mat-icon {
+      font-size: 18px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .elegant-language-option {
+    padding: 0;
+    height: auto;
+    line-height: normal;
+    transition: all 0.2s ease;
+    &:hover {
+      background: linear-gradient(90deg, rgba(103, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+    }
+    &.selected {
+      background: linear-gradient(90deg, rgba(103, 126, 234, 0.12) 0%, rgba(118, 75, 162, 0.12) 100%);
+      .option-name {
+        color: #667eea;
+        font-weight: 600;
+      }
+      .check-icon {
+        color: #667eea;
+      }
+    }
+    .option-content {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 20px;
+      width: 100%;
+    }
+    .option-flag {
+      font-size: 24px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .option-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .option-name {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.2;
+      color: #333;
+    }
+    .option-code {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #666;
+      opacity: 0.8;
+    }
+    .check-icon {
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      color: #4caf50;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .language-selector {
+    bottom: 20px;
+    right: 20px;
+    .language-button {
+      width: 56px;
+      height: 56px;
+      .flag-icon {
+        font-size: 20px;
+      }
+      .language-code {
+        font-size: 8px;
+      }
+    }
+  }
+  ::ng-deep .elegant-language-menu {
+    .mat-mdc-menu-panel {
+      min-width: 200px;
+    }
+    .elegant-language-option {
+      .option-content {
+        padding: 14px 16px;
+      }
+      .option-flag {
+        font-size: 20px;
+      }
+      .option-name {
+        font-size: 14px;
+      }
+    }
+  }
+}
+.language-selector {
+  animation: elegantSlideIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes elegantSlideIn {
+  from {
+    transform: translateY(100px) scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  ::ng-deep .elegant-language-menu {
+    .mat-mdc-menu-panel {
+      background: rgba(48, 48, 48, 0.95);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+    .elegant-language-option {
+      &:hover {
+        background: rgba(255, 255, 255, 0.08);
+      }
+      &.selected {
+        background: rgba(103, 126, 234, 0.2);
+      }
+      .option-name {
+        color: #e0e0e0;
+      }
+      .option-code {
+        color: #bbb;
+      }
+    }
+  }
+}

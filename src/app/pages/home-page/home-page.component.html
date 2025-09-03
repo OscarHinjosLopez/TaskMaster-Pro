@@ -1,0 +1,110 @@
+<div class="home-container">
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">{{ "app-title" | translate }}</h1>
+      <p class="hero-subtitle">{{ "app-subtitle" | translate }}</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">{{ totalTareas }}</span>
+          <span class="stat-label">{{ "total-tasks" | translate }}</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">{{ tareasCompletadas }}</span>
+          <span class="stat-label">{{ "completed-tasks" | translate }}</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">{{ tareasPendientes }}</span>
+          <span class="stat-label">{{ "pending-tasks" | translate }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-background">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="content-grid">
+      <!-- Panel de Agregar Tareas -->
+      <section class="panel add-panel">
+        <div class="panel-header">
+          <mat-icon class="panel-icon">add_circle</mat-icon>
+          <h2 class="panel-title">{{ 'new-task' | translate }}</h2>
+        </div>
+        <div class="panel-content">
+          <agregar-tareas></agregar-tareas>
+        </div>
+      </section>
+
+      <!-- Panel de Lista de Tareas -->
+      <section class="panel list-panel">
+        <div class="panel-header">
+          <mat-icon class="panel-icon">list_alt</mat-icon>
+          <h2 class="panel-title">{{ 'my-tasks' | translate }}</h2>
+          <div class="panel-actions">
+            <button mat-icon-button class="action-btn" (click)="refreshTasks()">
+              <mat-icon>refresh</mat-icon>
+            </button>
+            <button mat-icon-button class="action-btn" (click)="toggleView()">
+              <mat-icon>{{
+                isGridView ? "view_list" : "view_module"
+              }}</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div class="panel-content">
+          <app-lista-tareas></app-lista-tareas>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="brand-text">TaskMaster Pro</span>
+      </div>
+
+      <p class="footer-description">{{ "footer-developed-by" | translate }}</p>
+
+      <div class="footer-links">
+        <a
+          mat-button
+          class="footer-link linkedin-link"
+          href="https://www.linkedin.com/in/oscar-hinjos-l%C3%B3pez-b3498320b/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <mat-icon>linkedin-box</mat-icon>
+          {{ "footer-linkedin" | translate }}
+        </a>
+
+        <a
+          mat-button
+          class="footer-link email-link"
+          href="mailto:oscarhinjoslopez@gmail.com"
+        >
+          <mat-icon>mail</mat-icon>
+          {{ "footer-contact" | translate }}
+        </a>
+      </div>
+
+      <p class="copyright">
+        © {{ currentYear }} TaskMaster Pro.
+        {{ "footer-copyright" | translate }}.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Selector de idioma flotante -->
+  <app-language-selector></app-language-selector>
+</div>

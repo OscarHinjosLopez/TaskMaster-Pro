@@ -1,0 +1,68 @@
+<div class="agregar-tarea-container">
+  <div class="header-section">
+    <mat-icon class="header-icon">add_task</mat-icon>
+    <h2 class="header-title">{{ "add-new-task" | translate }}</h2>
+    <p class="header-subtitle">
+      {{ "organize-day-subtitle" | translate }}
+    </p>
+  </div>
+
+  <mat-divider class="section-divider"></mat-divider>
+
+  <form [formGroup]="tareaForm" (ngSubmit)="onSubmit()" class="tarea-form">
+    <div class="form-container">
+      <mat-form-field appearance="outline" class="tarea-input">
+        <mat-label>
+          <mat-icon class="input-icon">edit</mat-icon>
+          <span>{{ "what-need-to-do" | translate }}</span>
+        </mat-label>
+        <input
+          matInput
+          [placeholder]="'task-placeholder' | translate"
+          formControlName="tarea"
+          maxlength="100"
+          #tareaInput
+        />
+        <mat-hint align="end">{{ tareaInput.value.length || 0 }}/100</mat-hint>
+        <mat-error>
+          @if (isTareaInvalid) {
+          <mat-icon class="error-icon">error</mat-icon>
+          {{ tareaErrorMessage }}
+          }
+        </mat-error>
+      </mat-form-field>
+
+      <div class="button-container">
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          class="add-button"
+          [disabled]="!tareaForm.valid"
+        >
+          <mat-icon class="button-icon">add</mat-icon>
+          <span>{{ "add-task-button" | translate }}</span>
+        </button>
+
+        <button
+          mat-stroked-button
+          type="button"
+          class="clear-button"
+          (click)="clearForm()"
+          [disabled]="!tareaForm.get('tarea')?.value"
+        >
+          <mat-icon class="button-icon">clear</mat-icon>
+          <span>{{ "clear-button" | translate }}</span>
+        </button>
+      </div>
+    </div>
+  </form>
+
+  <!-- Indicador de carga opcional -->
+  @if (isLoading) {
+  <div class="loading-container">
+    <mat-spinner diameter="24"></mat-spinner>
+    <span class="loading-text">{{ "adding-task" | translate }}</span>
+  </div>
+  }
+</div>

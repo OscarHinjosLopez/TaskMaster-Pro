@@ -1,0 +1,11 @@
+export { StorageService } from './storage.service';
+export { NotificationService } from './notification.service';
+export { AnalyticsService } from './analytics.service';
+export { ThemeService } from './theme.service';
+export { SettingsService } from './settings.service';
+export { TareaService } from './tarea.service';
+export type { NotificationType } from './notification.service';
+export type { AnalyticsEvent } from './analytics.service';
+export type { Theme } from './theme.service';
+export type { AppSettings } from './settings.service';
+export type { Categoria, Prioridad } from './tarea.service';

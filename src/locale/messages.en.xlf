@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="failed-to-load-settings" datatype="html">
+        <source>Failed to load settings, using defaults:</source>
+        <target>Error al cargar configuraciones, usando valores por defecto:</target>
+      </trans-unit>
+      <trans-unit id="failed-to-save-settings" datatype="html">
+        <source>Failed to save settings:</source>
+        <target>Error al guardar configuraciones:</target>
+      </trans-unit>
+      <trans-unit id="invalid-file-format" datatype="html">
+        <source>Invalid file format</source>
+        <target>Formato de archivo inválido</target>
+      </trans-unit>
+      <trans-unit id="settings-imported-successfully" datatype="html">
+        <source>Settings imported successfully</source>
+        <target>Configuraciones importadas exitosamente</target>
+      </trans-unit>
+      <trans-unit id="error-processing-settings-file" datatype="html">
+        <source>Error processing settings file</source>
+        <target>Error al procesar el archivo de configuraciones</target>
+      </trans-unit>
+
+      <!-- Task-related translations -->
+      <trans-unit id="task-created-successfully" datatype="html">
+        <source>Task "{title}" created successfully</source>
+        <target>Tarea "{title}" creada exitosamente</target>
+      </trans-unit>
+      <trans-unit id="error-creating-task" datatype="html">
+        <source>Error creating task:</source>
+        <target>Error al crear la tarea:</target>
+      </trans-unit>
+      <trans-unit id="task-not-found" datatype="html">
+        <source>Task not found</source>
+        <target>Tarea no encontrada</target>
+      </trans-unit>
+      <trans-unit id="task-completed" datatype="html">
+        <source>Task "{title}" completed</source>
+        <target>Tarea "{title}" completada</target>
+      </trans-unit>
+      <trans-unit id="task-uncompleted" datatype="html">
+        <source>Task "{title}" uncompleted</source>
+        <target>Tarea "{title}" desmarcada</target>
+      </trans-unit>
+      <trans-unit id="error-completing-task" datatype="html">
+        <source>Error completing task:</source>
+        <target>Error al completar la tarea:</target>
+      </trans-unit>
+      <trans-unit id="task-deleted" datatype="html">
+        <source>Task "{title}" deleted</source>
+        <target>Tarea "{title}" eliminada</target>
+      </trans-unit>
+      <trans-unit id="error-deleting-task" datatype="html">
+        <source>Error deleting task:</source>
+        <target>Error al eliminar la tarea:</target>
+      </trans-unit>
+      <trans-unit id="task-updated" datatype="html">
+        <source>Task updated</source>
+        <target>Tarea actualizada</target>
+      </trans-unit>
+      <trans-unit id="error-updating-task" datatype="html">
+        <source>Error updating task:</source>
+        <target>Error al actualizar la tarea:</target>
+      </trans-unit>
+      <trans-unit id="tasks-loaded" datatype="html">
+        <source>Tasks loaded:</source>
+        <target>Tareas cargadas:</target>
+      </trans-unit>
+      <trans-unit id="error-loading-tasks" datatype="html">
+        <source>Error loading tasks:</source>
+        <target>Error al cargar las tareas:</target>
+      </trans-unit>
+      <trans-unit id="auto-save-failed" datatype="html">
+        <source>Auto-save failed:</source>
+        <target>Error al guardar automáticamente:</target>
+      </trans-unit>
+
+      <!-- Storage related translations -->
+      <trans-unit id="indexeddb-not-available" datatype="html">
+        <source>IndexedDB not available, using localStorage as fallback</source>
+        <target>IndexedDB no disponible, usando localStorage como fallback</target>
+      </trans-unit>
+
+      <!-- Category translations -->
+      <trans-unit id="category-personal" datatype="html">
+        <source>Personal</source>
+        <target>Personal</target>
+      </trans-unit>
+      <trans-unit id="category-work" datatype="html">
+        <source>Work</source>
+        <target>Trabajo</target>
+      </trans-unit>
+      <trans-unit id="category-study" datatype="html">
+        <source>Study</source>
+        <target>Estudio</target>
+      </trans-unit>
+      <trans-unit id="category-home" datatype="html">
+        <source>Home</source>
+        <target>Hogar</target>
+      </trans-unit>
+      <trans-unit id="category-health" datatype="html">
+        <source>Health</source>
+        <target>Salud</target>
+      </trans-unit>
+      <trans-unit id="category-finance" datatype="html">
+        <source>Finance</source>
+        <target>Finanzas</target>
+      </trans-unit>
+      <trans-unit id="category-social" datatype="html">
+        <source>Social</source>
+        <target>Social</target>
+      </trans-unit>
+
+      <!-- Priority translations -->
+      <trans-unit id="priority-low" datatype="html">
+        <source>Low</source>
+        <target>Baja</target>
+      </trans-unit>
+      <trans-unit id="priority-medium" datatype="html">
+        <source>Medium</source>
+        <target>Media</target>
+      </trans-unit>
+      <trans-unit id="priority-high" datatype="html">
+        <source>High</source>
+        <target>Alta</target>
+      </trans-unit>
+      <trans-unit id="priority-urgent" datatype="html">
+        <source>Urgent</source>
+        <target>Urgente</target>
+      </trans-unit>
+
+      <!-- UI Component translations -->
+      <trans-unit id="header-title" datatype="html">
+        <source>My Task List</source>
+        <target>Mi Lista de Tareas</target>
+      </trans-unit>
+      <trans-unit id="header-subtitle" datatype="html">
+        <source>Manage your tasks efficiently</source>
+        <target>Gestiona tus tareas de manera eficiente</target>
+      </trans-unit>
+      <trans-unit id="add-new-task" datatype="html">
+        <source>Add New Task</source>
+        <target>Agregar Nueva Tarea</target>
+      </trans-unit>
+      <trans-unit id="organize-day-subtitle" datatype="html">
+        <source>Organize your day by adding new tasks</source>
+        <target>Organiza tu día agregando nuevas tareas</target>
+      </trans-unit>
+      <trans-unit id="what-need-to-do" datatype="html">
+        <source>What do you need to do?</source>
+        <target>¿Qué necesitas hacer?</target>
+      </trans-unit>
+      <trans-unit id="task-placeholder" datatype="html">
+        <source>Ex: Complete the Angular project</source>
+        <target>Ej: Completar el proyecto de Angular</target>
+      </trans-unit>
+      <trans-unit id="add-task-button" datatype="html">
+        <source>Add Task</source>
+        <target>Agregar Tarea</target>
+      </trans-unit>
+      <trans-unit id="clear-button" datatype="html">
+        <source>Clear</source>
+        <target>Limpiar</target>
+      </trans-unit>
+      <trans-unit id="adding-task" datatype="html">
+        <source>Adding task...</source>
+        <target>Agregando tarea...</target>
+      </trans-unit>
+      <trans-unit id="task-already-exists" datatype="html">
+        <source>⚠️ Task already exists</source>
+        <target>⚠️ La tarea ya existe</target>
+      </trans-unit>
+      <trans-unit id="task-added-successfully" datatype="html">
+        <source>✅ Task added successfully</source>
+        <target>✅ Tarea agregada correctamente</target>
+      </trans-unit>
+      <trans-unit id="error-adding-task" datatype="html">
+        <source>❌ Error adding task</source>
+        <target>❌ Error al agregar la tarea</target>
+      </trans-unit>
+      <trans-unit id="close-button" datatype="html">
+        <source>Close</source>
+        <target>Cerrar</target>
+      </trans-unit>
+      <trans-unit id="task-required" datatype="html">
+        <source>Task is required</source>
+        <target>La tarea es requerida</target>
+      </trans-unit>
+      <trans-unit id="task-min-length" datatype="html">
+        <source>Task must be at least 3 characters</source>
+        <target>La tarea debe tener al menos 3 caracteres</target>
+      </trans-unit>
+      <trans-unit id="my-tasks" datatype="html">
+        <source>My Tasks</source>
+        <target>Mis Tareas</target>
+      </trans-unit>
+      <trans-unit id="loading-tasks" datatype="html">
+        <source>Loading tasks...</source>
+        <target>Cargando tareas...</target>
+      </trans-unit>
+      <trans-unit id="no-tasks" datatype="html">
+        <source>No tasks!</source>
+        <target>¡No hay tareas!</target>
+      </trans-unit>
+      <trans-unit id="add-first-task" datatype="html">
+        <source>Add your first task to get started</source>
+        <target>Agrega tu primera tarea para comenzar</target>
+      </trans-unit>
+      <trans-unit id="no-title" datatype="html">
+        <source>No title</source>
+        <target>Sin título</target>
+      </trans-unit>
+      <trans-unit id="delete-task-aria" datatype="html">
+        <source>Delete task: {task}</source>
+        <target>Eliminar tarea: {task}</target>
+      </trans-unit>
+      <trans-unit id="one-task-pending" datatype="html">
+        <source>1 pending task</source>
+        <target>1 tarea pendiente</target>
+      </trans-unit>
+      <trans-unit id="multiple-tasks-pending" datatype="html">
+        <source>{count} pending tasks</source>
+        <target>{count} tareas pendientes</target>
+      </trans-unit>
+
+      <!-- Language selector translations -->
+      <trans-unit id="change-language" datatype="html">
+        <source>Change language</source>
+        <target>Cambiar idioma</target>
+      </trans-unit>
+      <trans-unit id="select-language" datatype="html">
+        <source>Select language</source>
+        <target>Seleccionar idioma</target>
+      </trans-unit>
+
+      <!-- Hero section translations -->
+      <trans-unit id="app-title" datatype="html">
+        <source>TaskMaster Pro</source>
+        <target>TaskMaster Pro</target>
+      </trans-unit>
+      <trans-unit id="app-subtitle" datatype="html">
+        <source>Organize your life, maximize your productivity</source>
+        <target>Organiza tu vida, maximiza tu productividad</target>
+      </trans-unit>
+      <trans-unit id="total-tasks" datatype="html">
+        <source>Total Tasks</source>
+        <target>Tareas Totales</target>
+      </trans-unit>
+      <trans-unit id="completed-tasks" datatype="html">
+        <source>Completed</source>
+        <target>Completadas</target>
+      </trans-unit>
+      <trans-unit id="pending-tasks" datatype="html">
+        <source>Pending</source>
+        <target>Pendientes</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

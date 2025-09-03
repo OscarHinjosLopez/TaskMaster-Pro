@@ -1,0 +1,44 @@
+<div class="language-selector">
+  <!-- Botón principal elegante -->
+  <button
+    mat-fab
+    color="primary"
+    class="language-button"
+    [matMenuTriggerFor]="languageMenu"
+    [matTooltip]="getTooltipText()"
+    matTooltipPosition="left"
+  >
+    <div class="button-content">
+      <span class="flag-icon">{{ currentLanguage.flag }}</span>
+      <span class="language-code">{{ currentLanguage.code.toUpperCase() }}</span>
+    </div>
+  </button>
+
+  <!-- Menú mejorado -->
+  <mat-menu #languageMenu="matMenu" class="elegant-language-menu">
+    <div class="menu-header">
+      <mat-icon>translate</mat-icon>
+      <span>{{ 'select-language' | translate }}</span>
+    </div>
+
+    @for (language of availableLanguages; track language.code) {
+      <button
+        mat-menu-item
+        (click)="onLanguageSelect(language)"
+        [class.selected]="language.code === currentLanguage.code"
+        class="elegant-language-option"
+      >
+        <div class="option-content">
+          <span class="option-flag">{{ language.flag }}</span>
+          <div class="option-text">
+            <span class="option-name">{{ language.displayName }}</span>
+            <span class="option-code">{{ language.code.toUpperCase() }}</span>
+          </div>
+          @if (language.code === currentLanguage.code) {
+            <mat-icon class="check-icon">check_circle</mat-icon>
+          }
+        </div>
+      </button>
+    }
+  </mat-menu>
+</div>

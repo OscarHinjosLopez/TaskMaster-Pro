@@ -1,0 +1,67 @@
+<div class="lista-tareas-container">
+  <div class="header-section">
+    <mat-icon class="header-icon">assignment</mat-icon>
+    <h2 class="header-title">{{ "my-tasks" | translate }}</h2>
+    @if (tareas.length > 0) {
+    <p class="header-subtitle">
+      {{ getTaskCountText(tareas.length) }}
+    </p>
+    }
+  </div>
+
+  <!-- Loading State -->
+  @if (isLoading) {
+  <div class="loading-container">
+    <mat-spinner diameter="32"></mat-spinner>
+    <span class="loading-text">{{ "loading-tasks" | translate }}</span>
+  </div>
+  }
+
+  <!-- Empty State -->
+  @if (!isLoading && tareas.length === 0) {
+  <div class="empty-state">
+    <mat-icon class="empty-icon">inbox</mat-icon>
+    <h3 class="empty-title">{{ "no-tasks" | translate }}</h3>
+    <p class="empty-subtitle">
+      {{ "add-first-task" | translate }}
+    </p>
+  </div>
+  }
+
+  <!-- Lista de Tareas -->
+  @if (!isLoading && tareas.length > 0) {
+  <div class="tareas-grid">
+    @for (tarea of tareas; track trackByTarea($index, tarea)) {
+    <mat-card class="tarea-card" [class.completed]="tarea.completada">
+      <div class="tarea-content">
+        <div class="tarea-checkbox" (click)="toggleTarea(tarea)">
+          <mat-icon class="checkbox-icon" [class.checked]="tarea.completada">
+            {{ tarea.completada ? "check_circle" : "radio_button_unchecked" }}
+          </mat-icon>
+        </div>
+
+        <div class="tarea-info">
+          <p class="tarea-texto" [class.completed-text]="tarea.completada">
+            {{ getTaskText(tarea) }}
+          </p>
+          <span class="tarea-fecha">
+            {{ tarea.fechaCreacion | date : "dd/MM/yyyy HH:mm" }}
+          </span>
+        </div>
+
+        <div class="tarea-actions">
+          <button
+            mat-icon-button
+            class="delete-button"
+            (click)="eliminarTarea(tarea.id)"
+            [attr.aria-label]="getDeleteAriaLabel(tarea)"
+          >
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </div>
+    </mat-card>
+    }
+  </div>
+  }
+</div>
