@@ -5,9 +5,20 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --configuration=production",
+    "build:ssr": "ng build --configuration=production && npm run build:server",
+    "build:server": "ng build --configuration=production --output-hashing=none",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:todo-list": "node dist/todo-list/server/server.mjs"
+    "test:ci": "ng test --watch=false --browsers=ChromeHeadless --code-coverage",
+    "lint": "ng lint",
+    "serve:ssr": "node dist/todo-list/server/server.mjs",
+    "serve:ssr:todo-list": "node dist/todo-list/server/server.mjs",
+    "preview": "npm run build:prod && npm run serve:ssr",
+    "docker:build": "docker build -t taskmaster-pro .",
+    "docker:run": "docker run -p 4000:4000 taskmaster-pro",
+    "deploy:vercel": "vercel --prod",
+    "deploy:netlify": "netlify deploy --prod --dir=dist/todo-list/browser"
   },
   "private": true,
   "dependencies": {

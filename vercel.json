@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/todo-list/server/server.mjs",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/todo-list/server/server.mjs"
+    }
+  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/todo-list/browser",
+  "framework": "angular",
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
